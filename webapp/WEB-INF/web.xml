@@ -1,0 +1,39 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+
+    <servlet>
+        <servlet-name>ActivateSimServlet</servlet-name>
+        <servlet-class>com.telecom.app.ActivateSimServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActivateSimServlet</servlet-name>
+        <url-pattern>/activate-sim</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AssignPlanServlet</servlet-name>
+        <servlet-class>com.telecom.app.AssignPlanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AssignPlanServlet</servlet-name>
+        <url-pattern>/assign-plan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UsageRecordServlet</servlet-name>
+        <servlet-class>com.telecom.app.UsageRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsageRecordServlet</servlet-name>
+        <url-pattern>/usage-record</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BillingServlet</servlet-name>
+        <servlet-class>com.telecom.app.BillingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BillingServlet</servlet-name>
+        <url-pattern>/generate-bill</url-pattern>
+    </servlet-mapping>
+
+</web-app>
